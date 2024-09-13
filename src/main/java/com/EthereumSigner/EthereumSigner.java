@@ -4,19 +4,12 @@ import org.web3j.crypto.ECKeyPair;
 import org.web3j.crypto.Sign;
 import org.web3j.crypto.Hash;
 import org.web3j.utils.Numeric;
-import org.web3j.abi.TypeEncoder;
-import org.web3j.abi.datatypes.*;
-import org.web3j.abi.datatypes.generated.Bytes32;
-import org.web3j.abi.datatypes.generated.Bytes4;
-import org.web3j.abi.datatypes.generated.Uint256;
 import org.web3j.crypto.Keys;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import com.example.SolSHA3;
 
 public class EthereumSigner {
