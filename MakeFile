@@ -1,3 +1,5 @@
+clean:
+	mvn clean compile
 build:
 	mvn compile
 run:
