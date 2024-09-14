@@ -1,0 +1,4 @@
+build:
+	mvn compile
+run:
+	mvn exec:java
