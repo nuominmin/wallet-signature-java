@@ -32,7 +32,9 @@ public class EthereumSigner {
         byte[] signatureBytes = new byte[65];
         System.arraycopy(r, 0, signatureBytes, 0, 32);
         System.arraycopy(s, 0, signatureBytes, 32, 32);
-        signatureBytes[64] += 27;
+        if (signatureData.getV() != null && signatureData.getV().length > 0) {
+            signatureBytes[64] = signatureData.getV()[0];
+        }
 
         return Numeric.toHexString(signatureBytes);
     }
